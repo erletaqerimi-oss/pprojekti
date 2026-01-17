@@ -1,9 +1,9 @@
-const faqItems = document.querySelectorAll('.faq-item');
+const faqItems = document.querySelectorAll('.EQ-faq-item');
 
-// Add click event to toggle "active" class
 faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
+    const question = item.querySelector('.EQ-faq-question');
     question.addEventListener('click', () => {
         item.classList.toggle('active');
     });
 });
+

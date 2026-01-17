@@ -1,9 +1,7 @@
-// Select all job items
-const jobItems = document.querySelectorAll('.job-item');
+const jobItems = document.querySelectorAll('.EQ-job-item');
 
-// Toggle "active" class on click
 jobItems.forEach(item => {
-    const title = item.querySelector('.job-title');
+    const title = item.querySelector('.EQ-job-title');
     title.addEventListener('click', () => {
         item.classList.toggle('active');
     });

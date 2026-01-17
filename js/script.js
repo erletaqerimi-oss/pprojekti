@@ -1,5 +1,5 @@
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const menuToggle = document.getElementById("EQ-menuToggle");
+const navLinks = document.getElementById("EQ-navLinks");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");

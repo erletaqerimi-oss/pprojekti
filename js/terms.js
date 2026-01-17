@@ -1,4 +1,3 @@
-// Text for terms and privacy policies
 const termsText = `
 Welcome to SecureTech! By using our services, you agree to comply with all
 applicable laws and regulations. Unauthorized access or misuse of our systems
@@ -11,7 +10,8 @@ provide our services. We never share your personal information without consent.
 We use industry-standard security measures to protect your data.
 `;
 
-// Display the texts dynamically
-document.getElementById('terms-text').textContent = termsText;
-document.getElementById('policies-text').textContent = policiesText;
+
+document.getElementById('EQ-terms-text').textContent = termsText;
+document.getElementById('EQ-policies-text').textContent = policiesText;
+
 
