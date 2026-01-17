@@ -1,0 +1,136 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f111a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f2230;
+    padding: 40px 20px 20px;
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00aaff;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Container */
+.EQ-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Job Item */
+.EQ-job-item {
+    background-color: #1f2230;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Job Title */
+.EQ-job-title {
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.EQ-job-title::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.EQ-job-item.active .EQ-job-title::after {
+    transform: rotate(45deg);
+}
+
+/* Job Details */
+.EQ-job-details {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #12141e;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.EQ-job-item.active .EQ-job-details {
+    max-height: 1000px; /* dynamically enough for long content */
+    padding: 20px;
+}
+
+.EQ-job-details ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.EQ-job-details li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .EQ-job-title {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .EQ-job-details {
+        padding: 0 15px;
+    }
+
+    .EQ-job-item.active .EQ-job-details {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .EQ-job-title {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .EQ-job-details {
+        padding: 0 12px;
+    }
+
+    .EQ-job-item.active .EQ-job-details {
+        padding: 12px;
+    }
+}
