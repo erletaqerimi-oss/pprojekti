@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #11162a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #11162a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#EQ-terms,
+#EQ-policies {
+    background-color: #11162a;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#EQ-terms h2,
+#EQ-policies h2 {
+    color: #40739e;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #11162a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
