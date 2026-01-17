@@ -1,117 +1,124 @@
-.pricing-section {
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.EQ-pricing-section {
     padding: 60px 20px;
-    background: #0f2027;
+    background: #11162a;
     color: #ffffff;
     text-align: center;
     font-family: 'Arial', sans-serif;
-  }
+}
 
-  .pricing-section h2 {
+.EQ-pricing-section h2 {
     font-size: 36px;
     margin-bottom: 10px;
-  }
+}
 
-  .pricing-section h3 {
+.EQ-pricing-section h3 {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 40px;
-    color: #64ffda;
-  }
+    color: #00aaff;
+}
 
-  .pricing-cards {
+.EQ-pricing-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-  }
+}
 
-  .pricing-card {
-    background: #1b1b1b;
+.EQ-pricing-card {
+    background: #11162a;
     padding: 30px;
     border-radius: 12px;
     width: 280px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: transform 0.3s;
-  }
+}
 
-  .pricing-card:hover {
+.EQ-pricing-card:hover {
     transform: scale(1.05);
-  }
+}
 
-  .pricing-card.featured {
+.EQ-pricing-card.EQ-featured {
     background: #203a43;
-    border: 2px solid #ffd166;
-  }
+    border: 2px solid #00aaff;
+}
 
-  .pricing-card h4 {
+.EQ-pricing-card h4 {
     font-size: 24px;
     margin-bottom: 15px;
-  }
+}
 
-  .pricing-card .price {
+.EQ-pricing-card .EQ-price {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #64ffda;
-  }
+    color: #00aaff;
+}
 
-  .pricing-card ul {
+.EQ-pricing-card ul {
     list-style: none;
     padding: 0;
     margin-bottom: 25px;
-  }
+}
 
-  .pricing-card ul li {
+.EQ-pricing-card ul li {
     margin-bottom: 10px;
     font-size: 16px;
-  }
+}
 
-  .pricing-card button {
+.EQ-pricing-card button {
     padding: 12px 25px;
     font-size: 16px;
-    background-color: #ffd166;
+    background-color: #00aaff;
     color: #0f2027;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
-  }
+}
 
-  .pricing-card button:hover {
-    background-color: #ffb600;
-  }
+.EQ-pricing-card button:hover {
+    background-color: #ffffff;
+}
+
 @media (max-width: 992px) {
-  .pricing-cards {
+  .EQ-pricing-cards {
     gap: 15px;
     justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
-  .pricing-cards {
+  .EQ-pricing-cards {
     flex-direction: column;
     align-items: center;
   }
 
-  .pricing-card {
+  .EQ-pricing-card {
     width: 90%;
     max-width: 350px;
     margin-bottom: 20px;
   }
 
-  .pricing-card h4 {
+  .EQ-pricing-card h4 {
     font-size: 22px;
   }
 
-  .pricing-card .price {
+  .EQ-pricing-card .EQ-price {
     font-size: 24px;
   }
 
-  .pricing-card ul li {
+  .EQ-pricing-card ul li {
     font-size: 15px;
   }
 
-  .pricing-card button {
+  .EQ-pricing-card button {
     width: 100%;
     font-size: 15px;
     padding: 10px 20px;
@@ -119,25 +126,23 @@
 }
 
 @media (max-width: 480px) {
-  .pricing-section h2 {
+  .EQ-pricing-section h2 {
     font-size: 28px;
   }
 
-  .pricing-section h3 {
+  .EQ-pricing-section h3 {
     font-size: 18px;
   }
 
-  .pricing-card h4 {
+  .EQ-pricing-card h4 {
     font-size: 20px;
   }
 
-  .pricing-card .price {
+  .EQ-pricing-card .EQ-price {
     font-size: 22px;
   }
 
-  .pricing-card ul li {
+  .EQ-pricing-card ul li {
     font-size: 14px;
   }
 }
-
-
